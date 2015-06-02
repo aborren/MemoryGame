@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Memory-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Memory" spacing="2" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MemoryGame_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <separator alignment="left" id="Qxj-9s-2Fl"/>
+                        <group width="1" height="10" alignment="left" id="5Wy-p0-TAM">
+                            <items>
+                                <label alignment="center" text="Current: 0" textAlignment="left" id="LnO-AB-Oh7">
+                                    <fontDescription key="font" type="system" pointSize="8"/>
+                                </label>
+                                <label alignment="center" text="Highscore: 0" textAlignment="right" id="eId-Hq-hzu">
+                                    <fontDescription key="font" type="system" pointSize="8"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="2" id="H97-gT-vhc">
+                            <items>
+                                <group width="1" height="50" alignment="left" verticalAlignment="center" spacing="2" id="EFX-Pw-WYr">
+                                    <items>
+                                        <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="center" id="HFW-Yc-Aln">
+                                            <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="yellowClick" destination="AgC-eL-Hgc" id="GYy-tC-FGN"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.50000000000000011" height="1" alignment="left" verticalAlignment="center" id="nZQ-8n-68J">
+                                            <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="greenClick" destination="AgC-eL-Hgc" id="lQh-Me-eVd"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="50" alignment="left" verticalAlignment="center" spacing="2" id="R2V-vL-ISo">
+                                    <items>
+                                        <button width="0.50000000000000011" height="1" alignment="left" id="FLb-wK-PbI">
+                                            <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="blueClick" destination="AgC-eL-Hgc" id="2a7-Ha-c4o"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.50000000000000011" height="1" alignment="left" id="PBo-Ko-qEb">
+                                            <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="redClick" destination="AgC-eL-Hgc" id="B2n-4G-Jce"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" height="25" alignment="left" verticalAlignment="center" title="Start" id="qiH-z9-Ceu">
+                            <connections>
+                                <action selector="startClick" destination="AgC-eL-Hgc" id="V5p-eH-elK"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="blue" destination="FLb-wK-PbI" id="emY-Nj-eiZ"/>
+                        <outlet property="currentScoreLabel" destination="LnO-AB-Oh7" id="rSS-cj-cSF"/>
+                        <outlet property="green" destination="nZQ-8n-68J" id="HTN-6G-mVs"/>
+                        <outlet property="highScoreLabel" destination="eId-Hq-hzu" id="eBW-62-Zvp"/>
+                        <outlet property="red" destination="PBo-Ko-qEb" id="vdP-ve-JgA"/>
+                        <outlet property="start" destination="qiH-z9-Ceu" id="Xb8-x9-Gdb"/>
+                        <outlet property="yellow" destination="HFW-Yc-Aln" id="7UX-QR-nW4"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

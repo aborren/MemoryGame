@@ -13,6 +13,12 @@
 		B2F580651AB9D3FA00F60787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F580641AB9D3FA00F60787 /* Images.xcassets */; };
 		B2F580681AB9D3FA00F60787 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F580661AB9D3FA00F60787 /* LaunchScreen.xib */; };
 		B2F580741AB9D3FA00F60787 /* MemoryGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F580731AB9D3FA00F60787 /* MemoryGameTests.swift */; };
+		B2F580861AB9D41700F60787 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F580851AB9D41700F60787 /* InterfaceController.swift */; };
+		B2F580881AB9D41700F60787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F580871AB9D41700F60787 /* Images.xcassets */; };
+		B2F5808C1AB9D41800F60787 /* MemoryGame WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = B2F5808B1AB9D41800F60787 /* MemoryGame WatchKit App.app */; };
+		B2F580941AB9D41800F60787 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F580921AB9D41800F60787 /* Interface.storyboard */; };
+		B2F580961AB9D41800F60787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F580951AB9D41800F60787 /* Images.xcassets */; };
+		B2F580991AB9D41800F60787 /* MemoryGame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2F580811AB9D41700F60787 /* MemoryGame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +29,39 @@
 			remoteGlobalIDString = B2F580571AB9D3FA00F60787;
 			remoteInfo = MemoryGame;
 		};
+		B2F5808D1AB9D41800F60787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2F580501AB9D3FA00F60787 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2F5808A1AB9D41800F60787;
+			remoteInfo = "MemoryGame WatchKit App";
+		};
+		B2F580971AB9D41800F60787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2F580501AB9D3FA00F60787 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2F580801AB9D41700F60787;
+			remoteInfo = "MemoryGame WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B2F580A01AB9D41800F60787 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2F580991AB9D41800F60787 /* MemoryGame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B2264C8C1ABC4F78002CF7D4 /* MemoryGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MemoryGame.entitlements; sourceTree = "<group>"; };
+		B2264C8D1ABC4F9F002CF7D4 /* MemoryGame WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "MemoryGame WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		B2F580581AB9D3FA00F60787 /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F5805C1AB9D3FA00F60787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F5805D1AB9D3FA00F60787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +72,14 @@
 		B2F5806D1AB9D3FA00F60787 /* MemoryGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F580721AB9D3FA00F60787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F580731AB9D3FA00F60787 /* MemoryGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameTests.swift; sourceTree = "<group>"; };
+		B2F580811AB9D41700F60787 /* MemoryGame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MemoryGame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F580841AB9D41700F60787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F580851AB9D41700F60787 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B2F580871AB9D41700F60787 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2F5808B1AB9D41800F60787 /* MemoryGame WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemoryGame WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F580911AB9D41800F60787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F580931AB9D41800F60787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B2F580951AB9D41800F60787 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2F5807E1AB9D41700F60787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +112,8 @@
 			children = (
 				B2F5805A1AB9D3FA00F60787 /* MemoryGame */,
 				B2F580701AB9D3FA00F60787 /* MemoryGameTests */,
+				B2F580821AB9D41700F60787 /* MemoryGame WatchKit Extension */,
+				B2F5808F1AB9D41800F60787 /* MemoryGame WatchKit App */,
 				B2F580591AB9D3FA00F60787 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +123,8 @@
 			children = (
 				B2F580581AB9D3FA00F60787 /* MemoryGame.app */,
 				B2F5806D1AB9D3FA00F60787 /* MemoryGameTests.xctest */,
+				B2F580811AB9D41700F60787 /* MemoryGame WatchKit Extension.appex */,
+				B2F5808B1AB9D41800F60787 /* MemoryGame WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +132,7 @@
 		B2F5805A1AB9D3FA00F60787 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				B2264C8C1ABC4F78002CF7D4 /* MemoryGame.entitlements */,
 				B2F5805D1AB9D3FA00F60787 /* AppDelegate.swift */,
 				B2F5805F1AB9D3FA00F60787 /* ViewController.swift */,
 				B2F580611AB9D3FA00F60787 /* Main.storyboard */,
@@ -112,6 +168,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2F580821AB9D41700F60787 /* MemoryGame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2264C8D1ABC4F9F002CF7D4 /* MemoryGame WatchKit Extension.entitlements */,
+				B2F580851AB9D41700F60787 /* InterfaceController.swift */,
+				B2F580871AB9D41700F60787 /* Images.xcassets */,
+				B2F580831AB9D41700F60787 /* Supporting Files */,
+			);
+			path = "MemoryGame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B2F580831AB9D41700F60787 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2F580841AB9D41700F60787 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2F5808F1AB9D41800F60787 /* MemoryGame WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B2F580921AB9D41800F60787 /* Interface.storyboard */,
+				B2F580951AB9D41800F60787 /* Images.xcassets */,
+				B2F580901AB9D41800F60787 /* Supporting Files */,
+			);
+			path = "MemoryGame WatchKit App";
+			sourceTree = "<group>";
+		};
+		B2F580901AB9D41800F60787 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2F580911AB9D41800F60787 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +215,12 @@
 				B2F580541AB9D3FA00F60787 /* Sources */,
 				B2F580551AB9D3FA00F60787 /* Frameworks */,
 				B2F580561AB9D3FA00F60787 /* Resources */,
+				B2F580A01AB9D41800F60787 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2F580981AB9D41800F60787 /* PBXTargetDependency */,
 			);
 			name = MemoryGame;
 			productName = MemoryGame;
@@ -150,6 +245,39 @@
 			productReference = B2F5806D1AB9D3FA00F60787 /* MemoryGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B2F580801AB9D41700F60787 /* MemoryGame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F5809D1AB9D41800F60787 /* Build configuration list for PBXNativeTarget "MemoryGame WatchKit Extension" */;
+			buildPhases = (
+				B2F5807D1AB9D41700F60787 /* Sources */,
+				B2F5807E1AB9D41700F60787 /* Frameworks */,
+				B2F5807F1AB9D41700F60787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2F5808E1AB9D41800F60787 /* PBXTargetDependency */,
+			);
+			name = "MemoryGame WatchKit Extension";
+			productName = "MemoryGame WatchKit Extension";
+			productReference = B2F580811AB9D41700F60787 /* MemoryGame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		B2F5808A1AB9D41800F60787 /* MemoryGame WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F5809A1AB9D41800F60787 /* Build configuration list for PBXNativeTarget "MemoryGame WatchKit App" */;
+			buildPhases = (
+				B2F580891AB9D41800F60787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MemoryGame WatchKit App";
+			productName = "MemoryGame WatchKit App";
+			productReference = B2F5808B1AB9D41800F60787 /* MemoryGame WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +289,29 @@
 				TargetAttributes = {
 					B2F580571AB9D3FA00F60787 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7SX7NNMX7Q;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B2F5806C1AB9D3FA00F60787 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = B2F580571AB9D3FA00F60787;
+					};
+					B2F580801AB9D41700F60787 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7SX7NNMX7Q;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B2F5808A1AB9D41800F60787 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7SX7NNMX7Q;
 					};
 				};
 			};
@@ -183,6 +330,8 @@
 			targets = (
 				B2F580571AB9D3FA00F60787 /* MemoryGame */,
 				B2F5806C1AB9D3FA00F60787 /* MemoryGameTests */,
+				B2F580801AB9D41700F60787 /* MemoryGame WatchKit Extension */,
+				B2F5808A1AB9D41800F60787 /* MemoryGame WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +351,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F5807F1AB9D41700F60787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F580881AB9D41700F60787 /* Images.xcassets in Resources */,
+				B2F5808C1AB9D41800F60787 /* MemoryGame WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F580891AB9D41800F60787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F580941AB9D41800F60787 /* Interface.storyboard in Resources */,
+				B2F580961AB9D41800F60787 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +392,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2F5807D1AB9D41700F60787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F580861AB9D41700F60787 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +407,16 @@
 			isa = PBXTargetDependency;
 			target = B2F580571AB9D3FA00F60787 /* MemoryGame */;
 			targetProxy = B2F5806E1AB9D3FA00F60787 /* PBXContainerItemProxy */;
+		};
+		B2F5808E1AB9D41800F60787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2F5808A1AB9D41800F60787 /* MemoryGame WatchKit App */;
+			targetProxy = B2F5808D1AB9D41800F60787 /* PBXContainerItemProxy */;
+		};
+		B2F580981AB9D41800F60787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2F580801AB9D41700F60787 /* MemoryGame WatchKit Extension */;
+			targetProxy = B2F580971AB9D41800F60787 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +435,14 @@
 				B2F580671AB9D3FA00F60787 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B2F580921AB9D41800F60787 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F580931AB9D41800F60787 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +529,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MemoryGame/MemoryGame.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MemoryGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +544,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MemoryGame/MemoryGame.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MemoryGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -386,6 +589,74 @@
 			};
 			name = Release;
 		};
+		B2F5809B1AB9D41800F60787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = MemoryGame_WatchKit_Extension;
+				INFOPLIST_FILE = "MemoryGame WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		B2F5809C1AB9D41800F60787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = MemoryGame_WatchKit_Extension;
+				INFOPLIST_FILE = "MemoryGame WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		B2F5809E1AB9D41800F60787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MemoryGame WatchKit Extension/MemoryGame WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MemoryGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B2F5809F1AB9D41800F60787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MemoryGame WatchKit Extension/MemoryGame WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "MemoryGame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +676,7 @@
 				B2F580791AB9D3FA00F60787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2F5807A1AB9D3FA00F60787 /* Build configuration list for PBXNativeTarget "MemoryGameTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +685,25 @@
 				B2F5807C1AB9D3FA00F60787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F5809A1AB9D41800F60787 /* Build configuration list for PBXNativeTarget "MemoryGame WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F5809B1AB9D41800F60787 /* Debug */,
+				B2F5809C1AB9D41800F60787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F5809D1AB9D41800F60787 /* Build configuration list for PBXNativeTarget "MemoryGame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F5809E1AB9D41800F60787 /* Debug */,
+				B2F5809F1AB9D41800F60787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
